@@ -2,23 +2,29 @@
   <div class="login">
     <div class="container">
       <form v-on:submit.prevent="submit()">
-        <h1>Login</h1>
+        <h3>Login</h3>
         <ul>
           <li class="text-danger" v-for="error in errors">{{ error }}</li>
         </ul>
         <div class="form-group">
           <label>Email:</label>
-          <input type="email" class="form-control" v-model="email">
+          <input type="email" class="form-control" placeholder="name@email.com" v-model="email">
         </div>
         <div class="form-group">
           <label>Password:</label>
-          <input type="password" class="form-control" v-model="password">
+          <input type="password" class="form-control" placeholder="min 8 characters" v-model="password">
         </div>
         <input type="submit" class="btn btn-primary" value="Submit">
       </form>
     </div>
   </div>
 </template>
+
+<style>
+  .login {
+    margin-top: 90px;
+  }
+</style>
 
 <script>
 import axios from "axios";
@@ -44,7 +50,7 @@ export default {
           axios.defaults.headers.common["Authorization"] =
             "Bearer " + response.data.jwt;
           localStorage.setItem("jwt", response.data.jwt);
-          this.$router.push("/");
+          this.$router.push("/gratitude");
         })
         .catch(error => {
           this.errors = ["Invalid email or password."];

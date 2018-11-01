@@ -1,21 +1,23 @@
 <template>
   <div class="home">
-    <h2>Your Gratitudes</h2>
-    <div class="index" v-for="gratitude in gratitudes">
-      <h5>{{gratitude.message }}!</h5>
-    </div>
+    <h2>What are you grateful for today?</h2>
 
     <div class="add">
-      Today's Gratitude: <input v-model="newGratitude.message">
-      <button v-on:click="addGratitude()">Add Gratitude!</button>
+      <input v-model="newGratitude.message">
+      <button v-on:click="addGratitude()">Submit</button>
     </div>
   </div>
 </template>
 
 <style>
+
+.home {
+  margin-top: 120px;
+}
+
 .add {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .index {
@@ -41,7 +43,6 @@ var axios = require('axios');
 export default {
   data: function() {
     return {
-      message: "Health App",
 
       gratitudes: [],
       newGratitude: { message: ""}

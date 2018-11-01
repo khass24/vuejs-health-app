@@ -2,31 +2,39 @@
   <div class="signup">
     <div class="container">
       <form v-on:submit.prevent="submit()">
-        <h1>Signup</h1>
+        <h3>Signup</h3>
         <ul>
           <li class="text-danger" v-for="error in errors">{{ error }}</li>
         </ul>
         <div class="form-group">
           <label>Name:</label> 
-          <input type="text" class="form-control" v-model="name">
+          <input type="text" class="form-control" placeholder="First and Last" v-model="name">
         </div>
         <div class="form-group">
           <label>Email:</label>
-          <input type="email" class="form-control" v-model="email">
+          <input type="email" class="form-control" placeholder="Name@email.com" v-model="email">
         </div>
         <div class="form-group">
           <label>Password:</label>
-          <input type="password" class="form-control" v-model="password">
+          <input type="password" class="form-control" placeholder="Min 8 Characters" v-model="password">
         </div>
         <div class="form-group">
           <label>Password confirmation:</label>
-          <input type="password" class="form-control" v-model="passwordConfirmation">
+          <input type="password" class="form-control" placeholder="Re-enter Password"v-model="passwordConfirmation">
         </div>
         <input type="submit" class="btn btn-primary" value="Submit">
       </form>
     </div>
   </div>
 </template>
+
+<style>
+
+  .signup {
+    margin-top: 80px;
+  }
+
+</style>
 
 <script>
 import axios from "axios";
@@ -52,7 +60,7 @@ export default {
       axios
         .post("http://localhost:3000/api/users", params)
         .then(response => {
-          this.$router.push("/login");
+          this.$router.push("/gratitude");
         })
         .catch(error => {
           this.errors = error.response.data.errors;
