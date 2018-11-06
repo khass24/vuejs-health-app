@@ -1,6 +1,14 @@
 <template>
-  <div class="home">
-    <h2>Report Page</h2>
+  <div class="sleep-new">
+    <form v-on:submit.prevent="submit()">
+
+        <div class="form-group">
+          <label>Sleep:</label> 
+          <input type="text" class="form-control" v-model="count">
+        </div>
+        <input type="submit" class="btn btn-primary" value="Submit">
+      </form>
+    </div>
   </div>
 </template>
 
@@ -28,8 +36,8 @@ export default {
     .post("http://localhost:3000/api/sleep_reports", params)
     .then(response => {
       this.sleep.push(response.data);
-    }
-      
+      this.$router.push('/movement');
+    });
     }
   },
   computed: {}

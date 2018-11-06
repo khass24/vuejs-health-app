@@ -66,6 +66,7 @@ export default {
       .then(response => {
         this.gratitudes.push(response.data);
         this.newGratitude = {message: ""};
+        this.$router.push("/sleep");
       });
     }
   },
