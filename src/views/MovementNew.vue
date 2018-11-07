@@ -3,7 +3,7 @@
     <form>
       <div class="form-group">
         <h2>What was your step count today?</h2> 
-        <input type="text" class="form-control-sm" v-model="count">
+        <input type="text" class="form-control-sm" v-model="newMovement.count">
       </div>
       <input type="submit" class="btn btn-primary" value="Add Movement" @click="addMovement()">
     </form>

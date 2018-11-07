@@ -3,7 +3,7 @@
     <form>
       <div class="form-group">
         <h2>How many hours of sleep did you get last night?</h2> 
-        <input type="text" class="form-control-sm" v-model="count">
+        <input type="text" class="form-control-sm" v-model="newSleep.count">
       </div>
       <input type="submit" class="btn btn-primary" value="Add Sleep" @click="addSleep()">
     </form>
@@ -35,13 +35,13 @@ export default {
                     count: this.newSleep.count
                     };
 
-    axios
-    .post("http://localhost:3000/api/sleep_reports", params)
-    .then(response => {
-      this.sleep.push(response.data);
-      // this.newSleep = {count: ""};
-      this.$router.push('/movement');
-    });
+      axios
+      .post("http://localhost:3000/api/sleep_reports", params)
+      .then(response => {
+        this.sleep.push(response.data);
+        this.newSleep = {count: ""};
+        this.$router.push('/movement');
+      });
     }
   },
   computed: {}

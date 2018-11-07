@@ -60,7 +60,6 @@ export default {
       .post("http://localhost:3000/api/gratitudes", params)
       .then(response => {
         this.gratitudes.push(response.data);
-        this.newGratitude = {message: ""};
         this.$router.push("/sleep");
       });
     }

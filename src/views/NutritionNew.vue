@@ -3,7 +3,7 @@
     <form>
       <div class="form-group">
         <h2>What was your calorie count today?</h2> 
-        <input type="text" class="form-control-sm" v-model="count">
+        <input type="text" class="form-control-sm" v-model="newNutrition.count">
       </div>
       <input type="submit" class="btn btn-primary" value="Add Nutrition" @click="addNutrition()">
     </form>
