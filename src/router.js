@@ -8,7 +8,7 @@ import MovementNew from './views/MovementNew.vue'
 import NutritionNew from './views/NutritionNew.vue'
 import StressNew from './views/StressNew.vue'
 
-// import ReportNew from './views/ReportNew.vue'
+import ReportNew from './views/ReportNew.vue'
 
 import Signup from './views/Signup.vue'
 import Login from "./views/Login.vue"
@@ -26,7 +26,7 @@ export default new Router({
     { path: "/nutrition", name: "nutrition", component: NutritionNew },
     { path: "/stress", name: "stress", component: StressNew },
 
-    // { path: "/report", name: "report", component: ReportNew },
+    { path: "/report", name: "report", component: ReportNew },
 
     { path: "/signup", name: "signup", component: Signup },
     { path: "/logout", name: "logout", component: Logout }

@@ -1,10 +1,21 @@
 <template>
-  <div class="home">
-    <h2>Nutrition Page</h2>
+  <div class="nutrition-new">
+    <form>
+      <div class="form-group">
+        <h2>What was your calorie count today?</h2> 
+        <input type="text" class="form-control-sm" v-model="count">
+      </div>
+      <input type="submit" class="btn btn-primary" value="Add Nutrition" @click="addNutrition()">
+    </form>
+    </div>
   </div>
 </template>
 
 <style>
+.nutrition-new {
+  margin-top: 120px;
+  text-align: center;
+}
 </style>
 
 <script>

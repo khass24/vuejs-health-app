@@ -1,10 +1,12 @@
 <template>
   <div class="home">
-    <h2>What are you grateful for today?</h2>
+    <h2>What is something you're grateful for today?</h2>
 
     <div class="add">
       <input v-model="newGratitude.message">
-      <button v-on:click="addGratitude()">Submit</button>
+      <br>
+      <br>
+      <input type="submit" class="btn btn-primary" value="Be Grateful" @click="addGratitude()">
     </div>
   </div>
 </template>
@@ -43,18 +45,11 @@ var axios = require('axios');
 export default {
   data: function() {
     return {
-
       gratitudes: [],
       newGratitude: { message: ""}
     };
   },
-  created: function() {
-    axios
-    .get("http://localhost:3000/api/gratitudes")
-    .then(response => {
-      this.gratitudes = response.data;
-    });
-  },
+  created: function() {},
   methods: {
     addGratitude: function() {
       var params = {

@@ -1,10 +1,21 @@
 <template>
-  <div class="home">
-    <h2>Stress Page</h2>
+  <div class="stress-new">
+    <form>
+      <div class="form-group">
+        <h2>On a scale of 1 to 10 (10 being the best), how well did you manage your stress today?</h2> 
+        <input type="text" class="form-control-sm" v-model="count">
+      </div>
+      <input type="submit" class="btn btn-primary" value="See Daily Score" @click="addStress()">
+    </form>
+    </div>
   </div>
 </template>
 
 <style>
+.stress-new {
+  margin-top: 120px;
+  text-align: center;
+}
 </style>
 
 <script>

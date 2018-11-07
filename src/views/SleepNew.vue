@@ -1,18 +1,21 @@
 <template>
   <div class="sleep-new">
-    <form v-on:submit.prevent="submit()">
-
-        <div class="form-group">
-          <label>Sleep:</label> 
-          <input type="text" class="form-control" v-model="count">
-        </div>
-        <input type="submit" class="btn btn-primary" value="Submit">
-      </form>
+    <form>
+      <div class="form-group">
+        <h2>How many hours of sleep did you get last night?</h2> 
+        <input type="text" class="form-control-sm" v-model="count">
+      </div>
+      <input type="submit" class="btn btn-primary" value="Add Sleep" @click="addSleep()">
+    </form>
     </div>
   </div>
 </template>
 
 <style>
+.sleep-new {
+  margin-top: 120px;
+  text-align: center;
+}
 </style>
 
 <script>
@@ -36,6 +39,7 @@ export default {
     .post("http://localhost:3000/api/sleep_reports", params)
     .then(response => {
       this.sleep.push(response.data);
+      // this.newSleep = {count: ""};
       this.$router.push('/movement');
     });
     }

@@ -1,10 +1,21 @@
 <template>
-  <div class="home">
-    <h2>Movement Page</h2>
+  <div class="movement-new">
+    <form>
+      <div class="form-group">
+        <h2>What was your step count today?</h2> 
+        <input type="text" class="form-control-sm" v-model="count">
+      </div>
+      <input type="submit" class="btn btn-primary" value="Add Movement" @click="addMovement()">
+    </form>
+    </div>
   </div>
 </template>
 
 <style>
+.movement-new {
+  margin-top: 120px;
+  text-align: center;
+}
 </style>
 
 <script>
