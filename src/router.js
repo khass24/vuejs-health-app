@@ -9,6 +9,7 @@ import NutritionNew from './views/NutritionNew.vue'
 import StressNew from './views/StressNew.vue'
 
 import ReportNew from './views/ReportNew.vue'
+import Trend from './views/Trend.vue'
 
 import Signup from './views/Signup.vue'
 import Login from "./views/Login.vue"
@@ -27,6 +28,7 @@ export default new Router({
     { path: "/stress", name: "stress", component: StressNew },
 
     { path: "/report", name: "report", component: ReportNew },
+    { path: "/trend", name: "trend", component: Trend },
 
     { path: "/signup", name: "signup", component: Signup },
     { path: "/logout", name: "logout", component: Logout }

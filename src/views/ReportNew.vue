@@ -1,11 +1,13 @@
 <template>
-  <div class="home">
-    <h1>{{ message }}</h1>
-  </div>
+  <div class="report-new">
+    <h1>Daily Score</h1>
+<!--     <h2> {{ DailyReport.today }}</h2>
+ -->  </div>
 </template>
 
 <style>
-.home {
+.report-new {
+  margin-top: 120px;
   text-align: center;
 }
 </style>
@@ -18,7 +20,21 @@ export default {
     };
   },
   created: function() {},
-  methods: {},
-  computed: {}
-};
-</script>
+  methods: {
+      addReport: function() {
+        var params = {
+                      count: this.newReport.count
+                      };
+
+        axios
+        .post("http://localhost:3000/api/sleep_reports", params)
+        .then(response => {
+          this.sleep.push(response.data);
+          this.newSleep = {count: ""};
+          this.$router.push('/movement');
+        });
+      }
+    },
+    computed: {}
+  };
+  </script>

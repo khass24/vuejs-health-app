@@ -1,10 +1,10 @@
 import Vue from 'vue'
-import HighchartsVue from 'highcharts-vue'
 import App from './App.vue'
 import router from './router'
 import axios from "axios";
+import Trend from 'vuetrend';
 
-Vue.use(HighchartsVue);
+Vue.use(Trend);
 
 var jwt = localStorage.getItem("jwt");
 if (jwt) {
