@@ -3,15 +3,20 @@
     <h3>Sleep Trends</h3>
     <trend
       :data="sleep_data.sleep_array"
-      :gradient="['#D65461', '#222529', '#c1c4c9']"
+      :gradient="['#D65461', 'Gold', 'LawnGreen']"
       auto-draw
-      smooth>
+      smooth
+      auto-draw-duration=5000
+      auto-draw-easing="ease-in">>
     </trend>
   </div>
 
 </template>
 
 <style>
+h3 {
+  text-align: center;
+}
 </style>
 
 <script>

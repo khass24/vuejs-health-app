@@ -1,8 +1,19 @@
 <template>
   <div class="report-new">
     <h1>Daily Score</h1>
-<!--     <h2> {{ DailyReport.today }}</h2>
- -->  </div>
+    <div>View Your Stats:
+      <br>
+      <a href="#/sleep_stats">Sleep Stats</a>
+      <br>
+      <a href="#/movement_stats">Movement Stats</a>
+      <br>
+      <a href="#/nutrition_stats">Nutrition Stats</a>
+      <br>
+      <a href="#/stress_stats">Stress Stats</a>
+      <br>
+      <a href="#/gratitude_index">All Your Gratitudes</a>
+    </div>
+  </div>
 </template>
 
 <style>
@@ -31,7 +42,7 @@ export default {
         .then(response => {
           this.sleep.push(response.data);
           this.newSleep = {count: ""};
-          this.$router.push('/movement');
+          // this.$router.push('/movement');
         });
       }
     },

@@ -14,7 +14,7 @@
 <style>
 
 .home {
-  margin-top: 120px;
+  margin-top: 200px;
 }
 
 .add {
