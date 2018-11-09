@@ -1,7 +1,8 @@
 <template>
   <div class="report-new">
     <h1>Daily Score</h1>
-    <div>View Your Stats:
+<!--     <h3>{{movement_report.today_score}}</h3>
+ -->    <div>View Your Stats:
       <br>
       <a href="#/sleep_stats">Sleep Stats</a>
       <br>
@@ -27,7 +28,7 @@
 export default {
   data: function() {
     return {
-      message: "Daily Report"
+      daily_reports: []
     };
   },
   created: function() {},
@@ -38,11 +39,9 @@ export default {
                       };
 
         axios
-        .post("http://localhost:3000/api/sleep_reports", params)
+        .get("http://localhost:3000/api/movement_reports", params)
         .then(response => {
-          this.sleep.push(response.data);
-          this.newSleep = {count: ""};
-          // this.$router.push('/movement');
+          this.movement_reports = response.data
         });
       }
     },

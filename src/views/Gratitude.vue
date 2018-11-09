@@ -15,6 +15,7 @@
 
 .home {
   margin-top: 200px;
+  margin-bottom: 150px;
 }
 
 .add {

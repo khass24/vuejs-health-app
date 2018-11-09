@@ -23,6 +23,7 @@
 <style>
   .login {
     margin-top: 120px;
+    margin-bottom: 50px;
   }
 </style>
 
