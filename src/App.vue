@@ -9,11 +9,19 @@
                 <ul class="navbar-nav ml-auto">
                       <!-- Link-->
                       <li class="nav-item"> <a href="#/gratitude" class="nav-link">Start Daily Report</a></li>
-                      <li class="nav-item"> <a href="/" class="nav-link">Login</a></li>
                       <li class="nav-item"> <a href="#/signup" class="nav-link">Signup</a></li>
-                      <li class="nav-item"> <a href="#/logout" class="nav-link">Logout</a></li>
-                      <!-- Link-->
-                      </ul><!-- <a href="#" data-toggle="modal" data-target="#login" class="btn btn-primary navbar-btn ml-0 ml-lg-3">Login </a> -->
+                      <li class="nav-item"> <a href="/" class="nav-link">Login</a></li>
+                      <li class="nav-item dropdown"><a id="pages" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+
+                      class="nav-link dropdown-toggle">Menu</a>
+
+                        <div class="dropdown-menu">
+                          <a href="#/gratitude_index" class="dropdown-item">Gratitudes</a>
+                          <a href="#/report" class="dropdown-item">Your Stats</a>
+                          <a href="#/logout" class="dropdown-item">Logout</a>
+                        </div>
+                      </li>
+                      </ul>
                 </div>
             </div>
           </nav>

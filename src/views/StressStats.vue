@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="stress-stats">
     <h3>Stress Trends</h3>
     <trend
       :data="stress_data.stress_array"
@@ -14,8 +14,10 @@
 </template>
 
 <style>
-h3 {
+.stress-stats {
   text-align: center;
+  font-family: "Arial";
+  margin-top: 120px;
 }
 </style>
 

@@ -39,7 +39,6 @@ export default {
       .post("http://localhost:3000/api/sleep_reports", params)
       .then(response => {
         this.sleep.push(response.data);
-        this.newSleep = {count: ""};
         this.$router.push('/movement');
       });
     }

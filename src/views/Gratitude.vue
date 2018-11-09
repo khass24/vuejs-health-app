@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h2>What is something you're grateful for today?</h2>
+    <h2>What is one thing you're grateful for today?</h2>
 
     <div class="add">
       <input v-model="newGratitude.message">
