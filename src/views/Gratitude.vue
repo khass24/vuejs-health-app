@@ -34,7 +34,7 @@ h2 {
 }
 
 body {
-  font-family: "Palatino Linotype";
+  font-family: "Aref Ruqaa";
 }
 
 

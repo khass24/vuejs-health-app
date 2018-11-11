@@ -16,7 +16,7 @@
 <style>
 .stress-stats {
   text-align: center;
-  font-family: "Arial";
+  font-family: "Aref Ruqaa";
   margin-top: 120px;
 }
 </style>

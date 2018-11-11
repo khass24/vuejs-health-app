@@ -16,7 +16,7 @@
 <style>
 h3 {
   text-align: center;
-  font-family: "Courier New";
+  font-family: "Aref Ruqaa";
 }
 </style>
 

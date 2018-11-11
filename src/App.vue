@@ -23,6 +23,9 @@
             </div>
           </nav>
         </header>
+
+  
+
         
     <router-view/>
     <footer class="main-footer">
@@ -81,4 +84,7 @@
 </template>
 
 <style>
+.header {
+  font-family: "Aref Ruqaa";
+  }
 </style>
