@@ -39,7 +39,7 @@ export default {
                       };
 
         axios
-        .get("http://localhost:3000/api/movement_reports", params)
+        .get("http://localhost:3000/api/daily_score", params)
         .then(response => {
           this.movement_reports = response.data
         });

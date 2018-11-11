@@ -1,6 +1,6 @@
 <template>
   <div class="nutrition-new">
-    <form>
+    <form v-on:submit.prevent="addNutrition()">
       <div class="form-group">
         <h2>What was your calorie count today?</h2> 
         <input type="text" class="form-control-sm" v-model="newNutrition.count">

@@ -1,6 +1,6 @@
 <template>
   <div class="movement-new">
-    <form>
+    <form v-on:submit.prevent="addMovement()">
       <div class="form-group">
         <h2>What was your step count today?</h2> 
         <input type="text" class="form-control-sm" v-model="newMovement.count">

@@ -1,6 +1,6 @@
 <template>
   <div class="stress-new">
-    <form>
+    <form v-on:submit.prevent="addStress()">
       <div class="form-group">
         <h2>On a scale of 1 to 10 (10 being the best), how well did you manage your stress today?</h2> 
         <input type="text" class="form-control-sm" v-model="newStress.count">
