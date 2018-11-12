@@ -2,16 +2,14 @@
   <div class="report-show">
     <h2>Today's Score:</h2>
     <h1>{{ daily_score.daily_score }}</h1>
-    <div>View Your Stats:
-      <a href="#/sleep_stats">Sleep Stats</a>
+    <div class="links">
       <br>
-      <a href="#/movement_stats">Movement Stats</a>
+      <h5><a href="#/gratitude_index">View Gratitudes</a></h5>
       <br>
-      <a href="#/nutrition_stats">Nutrition Stats</a>
-      <br>
-      <a href="#/stress_stats">Stress Stats</a>
-      <br>
-      <a href="#/gratitude_index">All Your Gratitudes</a>
+      <h5><a href="#/sleep_stats">Sleep Trends</a></h5>
+      <h5><a href="#/movement_stats">Movement Trends</a></h5>
+      <h5><a href="#/nutrition_stats">Nutrition Trends</a></h5>
+      <h5><a href="#/stress_stats">Stress Trends</a></h5>
     </div>
   </div>
 </template>
@@ -20,7 +18,10 @@
 .report-show {
   margin-top: 200px;
   text-align: center;
-  margin-bottom: 150px;
+}
+
+.links {
+  padding: 50px;
 }
 </style>
 

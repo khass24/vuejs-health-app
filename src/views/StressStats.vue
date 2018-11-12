@@ -3,7 +3,7 @@
     <h3>Stress Trends</h3>
     <trend
       :data="stress_data.stress_array"
-      :gradient="['FireBrick', 'Gold', 'ForestGreen']"
+      :gradient="['FireBrick', 'Gold', 'LawnGreen']"
       auto-draw
       smooth
       auto-draw-duration=5000

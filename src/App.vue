@@ -24,43 +24,26 @@
           </nav>
         </header>
 
-  
-
-        
     <router-view/>
+
     <footer class="main-footer">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 mb-5 mb-lg-0">
-            <div class="footer-logo"><h3>Squared Health</h3></div>
+          <div class="col-md-9 mb-5 mb-lg-0">
+            <div class="footer-logo"><h1>Squared Health</h1></div>
           </div>
+    
           <div class="col-lg-3 mb-5 mb-lg-0">
-            <h5 class="footer-heading">Site pages</h5>
+            <h5 class="footer-heading">My Links</h5>
             <ul class="list-unstyled">
-              <li> <a href="index.html" class="footer-link">Home</a></li>
-              <li> <a href="faq.html" class="footer-link">FAQ</a></li>
-              <li> <a href="contact.html" class="footer-link">Contact</a></li>
-              <li> <a href="text.html" class="footer-link">Text Page</a></li>
+              <li> <a href="https://www.linkedin.com/in/kyle-hassett-/" class="footer-link">LinkedIn</a></li>
+              <li> <a href="https://github.com/kyle-hassett" class="footer-link">Github</a></li>
+            <br>
+            <li>kylehassett72@gmail.com</li>
+            <li>Kyle Hassett</li>
             </ul>
           </div>
-          <div class="col-lg-3 mb-5 mb-lg-0">
-            <h5 class="footer-heading">Product</h5>
-            <ul class="list-unstyled">
-              <li> <a href="#" class="footer-link">Why Appton?</a></li>
-              <li> <a href="#" class="footer-link">Enterprise</a></li>
-              <li> <a href="#" class="footer-link">Blog</a></li>
-              <li> <a href="#" class="footer-link">Pricing</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3">
-            <h5 class="footer-heading">Resources</h5>
-            <ul class="list-unstyled">
-              <li> <a href="#" class="footer-link">Download</a></li>
-              <li> <a href="#" class="footer-link">Help Center</a></li>
-              <li> <a href="#" class="footer-link">Guides</a></li>
-              <li> <a href="#" class="footer-link">Partners</a></li>
-            </ul>
-          </div>
+          
         </div>
       </div>
       <div class="copyrights">
@@ -70,11 +53,6 @@
               <p class="copyrights-text mb-3 mb-lg-0">&copy; All rights reserved. Appton.co. Design by <a href="https://bootstrapious.com/landing-pages" class="external footer-link">Bootstrapious </a></p>
               <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
               
-            </div>
-            <div class="col-lg-6 text-center text-lg-right">
-              <ul class="list-inline social mb-0">
-                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook"></i></a><a href="#" class="social-link"><i class="fa fa-twitter"></i></a><a href="#" class="social-link"><i class="fa fa-youtube-play"></i></a><a href="#" class="social-link"><i class="fa fa-vimeo"></i></a><a href="#" class="social-link"><i class="fa fa-pinterest"></i></a></li>
-              </ul>
             </div>
           </div>
         </div>
@@ -86,5 +64,9 @@
 <style>
 .header {
   font-family: "Aref Ruqaa";
+  }
+
+  body {
+    background-image: url("assets/extra_clean_paper.png");
   }
 </style>
