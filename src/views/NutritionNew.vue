@@ -16,6 +16,8 @@
   margin-top: 200px;
   text-align: center;
   margin-bottom: 150px;
+  padding-top:50px;
+  padding-bottom: 150px;
 }
 </style>
 

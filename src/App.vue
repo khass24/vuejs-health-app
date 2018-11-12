@@ -34,12 +34,15 @@
           </div>
     
           <div class="col-lg-3 mb-5 mb-lg-0">
-            <h5 class="footer-heading">My Links</h5>
+            <h5 class="footer-heading">Links</h5>
             <ul class="list-unstyled">
               <li> <a href="https://www.linkedin.com/in/kyle-hassett-/" class="footer-link">LinkedIn</a></li>
               <li> <a href="https://github.com/kyle-hassett" class="footer-link">Github</a></li>
             <br>
             <li>kylehassett72@gmail.com</li>
+            <br>
+            <br>
+            <br>
             <li>Kyle Hassett</li>
             </ul>
           </div>

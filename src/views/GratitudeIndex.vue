@@ -2,8 +2,8 @@
   <div class="gratitudes-index">
     <h2>Your Gratitudes</h2>
     <div class="row">
-      <div class="col-md-12" v-for="gratitude in gratitudes">
-        <div class="card" style="width: 70rem;">
+      <div class="col-md-15" v-for="gratitude in gratitudes">
+        <div class="card" style="width: 92rem">
           <div class="card-body bg-light">
             <h5 class="card-title">{{gratitude.message}}</h5>
           </div>
@@ -14,15 +14,11 @@
 </template>
 
 <style>
-
-h2 {
-  text-align: center;
-  margin-top: 90px;
-}
-
 .gratitudes-index {
+  margin-top: 90px;
   text-align: center;
-  padding-bottom: 140px;
+  padding-bottom: 50px;
+  padding-top: 30px;
   font-family: "Aref Ruqaa";
 }
 

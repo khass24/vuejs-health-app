@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="gratitude">
     <h2>What is one thing you're grateful for today?</h2>
 
     <div class="add">
@@ -13,9 +13,11 @@
 
 <style>
 
-.home {
+.gratitude {
   margin-top: 200px;
   margin-bottom: 150px;
+  padding-top:50px;
+  padding-bottom: 150px;
 }
 
 .add {

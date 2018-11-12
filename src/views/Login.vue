@@ -3,6 +3,7 @@
     <div class="container">
       <form v-on:submit.prevent="submit()">
         <h3>Login</h3>
+        <br>
         <ul>
           <li class="text-danger" v-for="error in errors">{{ error }}</li>
         </ul>
@@ -24,6 +25,8 @@
   .login {
     margin-top: 120px;
     margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 150px;
     font-family: "Aref Ruqaa";
   }
 </style>

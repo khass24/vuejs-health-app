@@ -33,6 +33,8 @@
   .signup {
     margin-top: 65px;
     margin-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 150px;
   }
 
 </style>
