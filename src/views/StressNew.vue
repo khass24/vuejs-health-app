@@ -13,8 +13,9 @@
 
 <style>
 .stress-new {
-  margin-top: 120px;
+  margin-top: 200px;
   text-align: center;
+  margin-bottom: 150px;
 }
 </style>
 

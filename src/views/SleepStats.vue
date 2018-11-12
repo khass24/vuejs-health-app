@@ -17,7 +17,8 @@
 .sleep_stats {
   text-align: center;
   font-family: "Aref Ruqaa";
-  margin-top: 120px;
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 </style>
 
