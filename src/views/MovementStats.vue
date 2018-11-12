@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="movement_stats">
     <h3>Movement Trends</h3>
     <trend
       :data="movement_data.movement_array"
@@ -14,9 +14,10 @@
 </template>
 
 <style>
-h3 {
+.movement_stats {
   text-align: center;
   font-family: "Aref Ruqaa";
+  margin-top: 120px;
 }
 </style>
 

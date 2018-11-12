@@ -14,7 +14,7 @@ import NutritionStats from './views/NutritionStats.vue'
 import MovementStats from './views/MovementStats.vue'
 import StressStats from './views/StressStats.vue'
 
-import ReportNew from './views/ReportNew.vue'
+import ReportShow from './views/ReportShow.vue'
 
 import Signup from './views/Signup.vue'
 import Login from "./views/Login.vue"
@@ -34,7 +34,7 @@ export default new Router({
     { path: "/nutrition", name: "nutrition", component: NutritionNew },
     { path: "/stress", name: "stress", component: StressNew },
 
-    { path: "/report", name: "report", component: ReportNew },
+    { path: "/report", name: "report", component: ReportShow },
 
     { path: "/sleep_stats", name: "sleep_stats", component: SleepStats },
     { path: "/nutrition_stats", name: "nutrition_stats", component: NutritionStats },

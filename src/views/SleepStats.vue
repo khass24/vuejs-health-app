@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="sleep_stats">
     <h3>Sleep Trends</h3>
     <trend
       :data="sleep_data.sleep_array"
@@ -14,8 +14,10 @@
 </template>
 
 <style>
-h3 {
+.sleep_stats {
   text-align: center;
+  font-family: "Aref Ruqaa";
+  margin-top: 120px;
 }
 </style>
 

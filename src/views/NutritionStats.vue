@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="nutrition_stats">
     <h3>Calorie Intake Trends</h3>
     <trend
       :data="nutrition_data.nutrition_array"
@@ -14,8 +14,10 @@
 </template>
 
 <style>
-h3 {
+.nutrition_stats {
   text-align: center;
+  font-family: "Aref Ruqaa";
+  margin-top: 120px;
 }
 </style>
 
