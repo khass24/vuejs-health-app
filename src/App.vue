@@ -9,12 +9,12 @@
                 <ul class="navbar-nav ml-auto">
                       <!-- Link-->
                       <li class="nav-item"><h5><a href="#/gratitude" class="nav-link">Start Daily Report</a></h5></li>
-                      <li class="nav-item"><h5><a href="#/signup" class="nav-link">Signup</a></h5></li>
+                      <li class="nav-item"><h5><a href="#/signup" class="nav-link">Sign Up</a></h5></li>
                       <li class="nav-item"><h5><a href="#/login" class="nav-link">Login</a></h5></li>
                       <li class="nav-item dropdown"><h5><a id="pages" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Menu</a>
                         <div class="dropdown-menu">
                           <a href="#/gratitude_index" class="dropdown-item"><h5>Gratitudes</h5></a>
-                          <a href="#/report" class="dropdown-item"><h5>Your Stats</h5></a>
+                          <a href="#/report" class="dropdown-item"><h5>Trends</h5></a>
                           <a href="#/logout" class="dropdown-item"><h5>Logout</h5></a>
                         </div></h5>
                     </li>

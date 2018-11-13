@@ -3,6 +3,7 @@
     <form v-on:submit.prevent="addSleep()">
       <div class="form-group">
         <h1>How many hours of sleep did you get last night?</h1> 
+        <br>
         <input style="font-size:25px" type="text" class="form-control-sm" v-model="newSleep.count">
       </div>
       <input type="submit" class="btn btn-primary" value="Add Sleep" @click="addSleep()">

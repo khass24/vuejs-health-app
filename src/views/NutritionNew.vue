@@ -3,6 +3,7 @@
     <form v-on:submit.prevent="addNutrition()">
       <div class="form-group">
         <h1>What was your calorie count today?</h1> 
+        <br>
         <input style="font-size:25px" type="text" class="form-control-sm" v-model="newNutrition.count">
       </div>
       <input type="submit" class="btn btn-primary" value="Add Nutrition" @click="addNutrition()">

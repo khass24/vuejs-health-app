@@ -3,7 +3,7 @@
     <h3>Sleep Trends</h3>
     <trend
       :data="sleep_data.sleep_array"
-      :gradient="['FireBrick', 'Gold', 'LawnGreen']"
+      :gradient="['#D65461', 'Gold', 'ForestGreen']"
       auto-draw
       smooth
       auto-draw-duration=5000

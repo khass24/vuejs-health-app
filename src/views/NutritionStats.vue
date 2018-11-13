@@ -3,7 +3,7 @@
     <h3>Calorie Intake Trends</h3>
     <trend
       :data="nutrition_data.nutrition_array"
-      :gradient="['FireBrick', 'Gold', 'LawnGreen']"
+      :gradient="['#D65461', 'Gold', 'ForestGreen']"
       auto-draw
       smooth
       auto-draw-duration=5000

@@ -1,7 +1,7 @@
 <template>
   <div class="gratitude">
     <h1>What is one thing you're grateful for today?</h1>
-
+    <br>
     <div class="add">
       <input style="font-size:25px" v-model="newGratitude.message">
       <br>

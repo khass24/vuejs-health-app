@@ -3,7 +3,7 @@
     <h3>Movement Trends</h3>
     <trend
       :data="movement_data.movement_array"
-      :gradient="['FireBrick', 'Gold', 'LawnGreen']"
+      :gradient="['#D65461', 'Gold', 'ForestGreen']"
       auto-draw
       smooth
       auto-draw-duration=5000
