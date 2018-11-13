@@ -20,10 +20,10 @@
           <input type="password" class="form-control" placeholder="Min 8 Characters" v-model="password">
         </div>
         <div class="form-group">
-          <label>Password confirmation:</label>
+          <label>Password Confirmation:</label>
           <input type="password" class="form-control" placeholder="Re-enter Password"v-model="passwordConfirmation">
         </div>
-        <input type="submit" class="btn btn-primary" value="Submit">
+        <input type="submit" class="btn btn-primary" value="Sign Up">
       </form>
     </div>
   </div>

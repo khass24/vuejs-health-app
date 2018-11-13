@@ -3,6 +3,7 @@
     <form v-on:submit.prevent="addMovement()">
       <div class="form-group">
         <h1>What was your step count today?</h1> 
+        <br>
         <input style="font-size:25px"type="text" class="form-control-sm" v-model="newMovement.count">
       </div>
       <input type="submit" class="btn btn-primary" value="Add Movement" @click="addMovement()">

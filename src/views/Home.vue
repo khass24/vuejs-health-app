@@ -7,7 +7,7 @@
           <br>
           <div class="row">
             <div class="col-lg-10">
-              <p class="lead divider-subtitle mt-2 text-muted">When people think health, their minds go to physical exercise or eating healthy. But a person’s health is more complex than that. <br><br>It encompasses nutrition, daily movement, stress management, and good sleep habits. Squared Health allows you to get the full picture of how you’re doing as a whole.</p>
+              <p class="lead divider-subtitle mt-2 text-muted">When a person thinks about "health", their mind often goes to hitting the gym and eating vegetables. But a person’s health is more complex than that. <br><br>It encompasses Nutrition, Movement, Stress Management, and Sleep. Squared Health allows you to get the full picture of your health as a whole.</p>
             </div>
           </div><a href="#/signup" class="btn btn-primary">Sign Up</a>
         </div>
@@ -18,6 +18,7 @@
       <div class="text-center">
         <h2>Track your day from start to finish</h2>
         <p class="lead text-muted mt-2">Get instant feedback on the four essential areas of your health</p>
+        <a href="#/report" class="btn btn-primary">View Trends</a>
       </div>
       <div class="row">
         <div class="col-lg-7 mx-auto mt-5"><img src="img/illustration-1.svg" alt="..." class="intro-image img-fluid"></div>
