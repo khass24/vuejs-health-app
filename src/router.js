@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
+import Home from './views/Home.vue'
+
 import Gratitude from './views/Gratitude.vue'
 import GratitudeIndex from './views/GratitudeIndex.vue'
 
@@ -24,7 +26,7 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
-    { path: "/", name: "login", component: Login },
+    { path: "/", name: "home", component: Home },
 
     { path: "/gratitude", name: "gratitude", component: Gratitude },
     { path: "/gratitude_index", name: "gratitude_index", component: GratitudeIndex },
@@ -41,7 +43,7 @@ export default new Router({
     { path: "/movement_stats", name: "movement_stats", component: MovementStats },
     { path: "/stress_stats", name: "stress_stats", component: StressStats },
 
-
+    { path: "/login", name: "login", component: Login },
     { path: "/signup", name: "signup", component: Signup },
     { path: "/logout", name: "logout", component: Logout }
   ]

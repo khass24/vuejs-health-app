@@ -2,8 +2,8 @@
   <div class="nutrition-new">
     <form v-on:submit.prevent="addNutrition()">
       <div class="form-group">
-        <h2>What was your calorie count today?</h2> 
-        <input type="text" class="form-control-sm" v-model="newNutrition.count">
+        <h1>What was your calorie count today?</h1> 
+        <input style="font-size:25px" type="text" class="form-control-sm" v-model="newNutrition.count">
       </div>
       <input type="submit" class="btn btn-primary" value="Add Nutrition" @click="addNutrition()">
     </form>

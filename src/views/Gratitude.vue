@@ -1,9 +1,9 @@
 <template>
   <div class="gratitude">
-    <h2>What is one thing you're grateful for today?</h2>
+    <h1>What is one thing you're grateful for today?</h1>
 
     <div class="add">
-      <input v-model="newGratitude.message">
+      <input style="font-size:25px" v-model="newGratitude.message">
       <br>
       <br>
       <input type="submit" class="btn btn-primary" value="Be Grateful" @click="addGratitude()">
@@ -18,6 +18,7 @@
   margin-bottom: 150px;
   padding-top:50px;
   padding-bottom: 150px;
+  text-align: center;
 }
 
 .add {
@@ -28,11 +29,6 @@
 .index {
   text-align: center;
   margin: 20px;
-}
-
-h2 {
-  text-align: center;
-  margin: 30px;
 }
 
 body {

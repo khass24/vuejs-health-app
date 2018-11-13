@@ -1,31 +1,36 @@
 <template>
-  <div class="gratitudes-index">
-    <h2>Your Gratitudes</h2>
-    <div class="row">
-      <div class="col-md-15" v-for="gratitude in gratitudes">
-        <div class="card" style="width: 92rem">
-          <div class="card-body bg-light">
-            <h5 class="card-title">{{gratitude.message}}</h5>
+  <section>
+    <div class="gratitudes-index">
+      <div class="text-center">
+        <h1>Your Gratitudes <img src="https://d19m59y37dris4.cloudfront.net/appton/1-0/img/placeholder.svg" alt="" height="50" width="40"></h1>
+      </div>
+      <div class="integrations mt-5">
+        <div class="row">
+          <div class="col-lg-3" v-for="gratitude in gratitudes">
+            <div class="box text-center">
+              <h5 class="card-title">{{gratitude.message}}</h5>
+            </div>
+          </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style>
 .gratitudes-index {
-  margin-top: 90px;
+  margin-top: 30px;
   text-align: center;
   padding-bottom: 50px;
-  padding-top: 30px;
   font-family: "Aref Ruqaa";
 }
 
-.card {
-  align-content: center;
+.col-lg-3:hover {
+  background: #E7475E;
+  color: #fff;
+  text-decoration-color: white;
 }
-
 </style>
 
 <script>
